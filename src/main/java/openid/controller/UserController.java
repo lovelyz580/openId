@@ -7,11 +7,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import openid.util.AesCbuUtil;
 import openid.util.HttpRequest;
+
 @Controller
 @RequestMapping("/wxlogin")
 public class UserController {
     @RequestMapping(params = "getuserinfo")
     @ResponseBody
+//    获取用户的openID
     public Map getuserinfo(String encryptedData, String iv, String code) {
         Map map = new HashMap();
         // 登录凭证不能为空
@@ -65,4 +67,5 @@ public class UserController {
         }
         return map;
     }
+
 }
