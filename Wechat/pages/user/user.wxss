@@ -1,0 +1,5 @@
+/* pages/user/user.wxss */
+button{
+  width: 33.333%;
+  float: left;
+}

@@ -1,0 +1,56 @@
+/* pages/list/list.wxss */
+
+.content {
+  background: beige;
+  height: 1100rpx;
+}
+
+.zhu {
+  text-align: center;
+  display: inline-block;
+  color: chartreuse;
+  border: 1rpx solid royalblue;
+  width: 160rpx;
+  height: 50rpx;
+  position: relative;
+  top: 470rpx;
+}
+
+.indexone0 {
+  color: red;
+  border: 1rpx solid royalblue;
+  width: 160rpx;
+  height: 50rpx;
+  position: relative;
+  top: 230rpx;
+  left: 160rpx;
+}
+
+.indexone1 {
+  color: red;
+  border: 1rpx solid royalblue;
+  width: 160rpx;
+  height: 50rpx;
+  position: relative;
+  top: 560rpx;
+  left: 160rpx;
+}
+.indextwo0 {
+  color: blue;
+  border: 1rpx solid royalblue;
+  width: 160rpx;
+  height: 50rpx;
+  position: relative;
+  top: 100rpx;
+  left: 330rpx;
+ 
+}
+.indextwo1 {
+  color: blue;
+  border: 1rpx solid royalblue;
+  width: 160rpx;
+  height: 50rpx;
+  position: relative;
+  top: 540rpx;
+  left: 330rpx;
+}

@@ -1,0 +1,29 @@
+<view class='content'>
+
+  <view class="myNew" wx:for="{{list}}" class='yi'>
+    <view class='zhu' bindtap='zhu'>
+      {{item.title}}
+    </view>
+    <view wx:for="{{item.indexone}}" wx:for-item="indexone">
+      <view class='indexone{{index}}' bindtap='indexone{{index}}' hidden='{{one}}'>
+        {{indexone.title}}
+      </view>
+      <view wx:for="{{indexone.indextwo}}" wx:for-item="indextwo">
+        <view class='indextwo{{index}}' bindtap='indextwo{{index}}' hidden='{{two}}'>
+          {{indextwo.title}}
+        </view>
+        <view wx:for="{{indextwo.indexthree}}" wx:for-item="indexthree">
+          <view class='indexthree{{index}}' bindtap='indexthree{{index}}' hidden='{{three}}'>
+            {{indexthree.title}}
+          </view>
+          <view wx:for="{{indexthree.indexfour}}" wx:for-item="indexfour">
+            <view class='indexfour{{index}}' bindtap='indexfour{{index}}' hidden='{{four}}'>
+              {{indexfour.title}}---
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view bindtap='url'> 上传图片</view>

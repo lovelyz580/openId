@@ -1,0 +1,10 @@
+<view>
+<button   bindtap='user'>用户</button> <button  bindtap='admin'>管理员</button><button  bindtap='order'>商家</button>
+</view>
+
+
+<view>
+{{body}}
+</view>
+
+
