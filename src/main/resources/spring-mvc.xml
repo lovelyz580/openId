@@ -48,6 +48,7 @@
         <property name="resolveLazily" value="true"/>
     </bean>
 
+
     <!-- 配置ViewResolver 。可用多个ViewResolver 。使用order属性排序。   InternalResourceViewResolver 放在最后-->
     <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
         <property name="order" value="1"></property>
