@@ -20,13 +20,14 @@ import com.google.gson.Gson;
 @Controller
 @RequestMapping("order")
 public class PayController {
-    /*
+    /**
      * 购买
      * @param request
      * @param response
      * @return
      * */
-    @RequestMapping(params = "pay")
+    @RequestMapping("/pay")
+
     @ResponseBody
     public void doOrder(HttpServletRequest request, HttpServletResponse response) throws Exception{
         request.setCharacterEncoding("UTF-8");
@@ -92,7 +93,7 @@ public class PayController {
     }
     //订单存入数据库  上面参数 packageParams.put("notify_url", "http://你的IP地址/order/buy.action");
     // 回调的就是这个方法
-    @RequestMapping(value="buy")
+    @RequestMapping("buy")
     @ResponseBody
     public void Buy(HttpServletRequest request,HttpServletResponse response) throws Exception{
 

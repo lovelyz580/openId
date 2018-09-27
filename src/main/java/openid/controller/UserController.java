@@ -8,10 +8,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import openid.util.AesCbuUtil;
 import openid.util.HttpRequest;
 
+
+/**
+ * 获取用户的openID
+ * return   map
+ */
 @Controller
 @RequestMapping("/wxlogin")
 public class UserController {
-    @RequestMapping(params = "getuserinfo")
+    @RequestMapping("/userinfo")
     @ResponseBody
 //    获取用户的openID
     public Map getuserinfo(String encryptedData, String iv, String code) {
